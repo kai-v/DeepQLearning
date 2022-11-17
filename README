@@ -1,0 +1,27 @@
+This is how you run my code on the real robot:
+
+
+Run : 
+
+Create a conda environment and pip install tf-agents, numpy and ipython
+open a new terminal - conda activate the environment 
+
+
+1. cd to the package directory then run source ~/catkin_ws/devel/setup.bash
+2. cd to src and chmod +x task2_robot.py
+3. GEt the robot ip address and the ip address of the host machine , then run 
+
+export ROS_MASTER_URI=http://[robot_ip]:11311
+export ROS_HOSTNAME=[host_ip]
+export TURTLEBOT3_MODEL=waffle_pi
+
+
+Run: rosrun P1_T2 task2_robot.py
+
+The file is set to test mode for running on the real robot
+
+
+
+
+
+
